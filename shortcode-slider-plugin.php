@@ -20,8 +20,8 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
 if ( ! is_plugin_active( 'woocommerce/woocommerce.php') ) { ?>
 	<div class="alert alert-danger notice is-dismissible" style="border-left: 4px solid red;">
-        <p>Sorry, but this plugin requires WooCommerce. <br> So please ensure that WooCommerce is both installed and activated.</p>
-    </div>
+		<p>Sorry, but this plugin requires WooCommerce. <br> So please ensure that WooCommerce is both installed and activated.</p>
+	</div>
 	<?php
 	deactivate_plugins( plugin_basename( __FILE__) );
 
@@ -53,3 +53,4 @@ function enqueue_shortcode_slider_plugin_styles() {
  */
 require_once 'includes/class-slider-repository.php';
 require_once 'includes/class-slider-controller.php';
+require_once 'includes/partials/shortcode.php';
